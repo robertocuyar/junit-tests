@@ -35,7 +35,7 @@ public class Student {
                 break;
             }
         }
-            return this.grades;
+        return this.grades;
     }
     public ArrayList<Integer> deleteGrade(int oldNum) {
         for (int grade : this.grades) {
