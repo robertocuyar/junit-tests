@@ -24,4 +24,13 @@ public class Cohort {
     public List<Student> getStudents() {
         return students;
     }
+
+    public String findStudentById(long id){
+        for(Student student: this.students){
+            if(student.getId() == id){
+                return student.getName();
+            }
+        }
+      return "Student not found.";
+    }
 }
